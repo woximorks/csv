@@ -1,4 +1,4 @@
-# Zendesk Engage Project
+# CSV Project
 
 This is a useful tool to parse CSV files and convert the data to JSON format. It's initialized to also separate data within the existing field when '::' exists, much like a path structure. It checks for and removes duplicates on that path level, organizing the contents into nested objects when duplicates exist.
 
@@ -15,8 +15,8 @@ This is a useful tool to parse CSV files and convert the data to JSON format. It
 To get started with this project, clone the repository and install the necessary gems:
 
 ```bash
-git clone <repository-url>
-cd zendesk-engage
+git clone git@github.com:woximorks/csv.git
+cd csv
 bundle install
 ```
 
@@ -25,7 +25,7 @@ bundle install
 Run the following command to create a new Rails application with PostgreSQL:
 
 ```bash
-rails new zendesk-engage -d postgresql
+rails new csv -d postgresql
 ```
 
 ### Directory Structure
