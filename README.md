@@ -33,6 +33,7 @@ rails db:create db:migrate
 - `lib/scripts`: Contains utility scripts for data processing.
   - `parse_excel.rb`: Script for parsing Excel files.
 - `lib/data`: Contains data files used by the application.
+  - data.xlsx contains some starter information and should be considred the template file.
 
 ### Running the Script
 
@@ -42,7 +43,10 @@ To run the Excel parsing script, use the following command:
 ruby lib/scripts/parse_excel.rb
 ```
 
-Make sure to modify line 5 to specify the correct file and adjust the offset on line 17 if a header exists. Additionally, change the `::` in line 22 if the data uses a different separator.
+- scripts/parse_excel.rb
+  - Make sure to modify line 5 of this file to specify the correct file name and path of your data.
+  - Adjust the offset on line 17 if a header exists. 0 = header 0 rows tall, 1 = header 1 row tall, etc
+  - Additionally, change the `::` in line 22 if the data uses a different separator.
 
 ## Changelog
 
