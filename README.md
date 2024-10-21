@@ -22,10 +22,10 @@ bundle install
 
 ## Usage
 
-Run the following command to create a new Rails application with PostgreSQL:
+Run the following command to create the PostgreSQL database:
 
 ```bash
-rails new csv -d postgresql
+rails db:create db:migrate
 ```
 
 ### Directory Structure
@@ -47,11 +47,3 @@ Make sure to modify line 5 to specify the correct file and adjust the offset on 
 ## Changelog
 
 All notable changes to this project will be documented in the [CHANGELOG.md](CHANGELOG.md) file.
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
