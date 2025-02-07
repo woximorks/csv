@@ -1,14 +1,12 @@
 # CSV Project
 
-This is a useful tool to parse CSV files and convert the data to JSON format. It's initialized to also separate data within the existing field when '::' exists, much like a path structure. It checks for and removes duplicates on that path level, organizing the contents into nested objects when duplicates exist.
+This is a useful tool to parse 'CSV' files (sort of) and convert the data to JSON format. It's initialized to separate data within the existing field when '::' exists as the separator, and the contents are organized in path structure. It checks for and removes duplicates on that path level, organizing the contents into nested objects when duplicates exist.
 
 ## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Changelog](#changelog)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
@@ -46,7 +44,7 @@ ruby lib/scripts/parse_excel.rb
 - scripts/parse_excel.rb
   - Make sure to modify line 5 of this file to specify the correct file name and path of your data.
   - Adjust the offset on line 17 if a header exists. 0 = header 0 rows tall, 1 = header 1 row tall, etc
-  - Additionally, change the `::` in line 22 if the data uses a different separator.
+  - Change the `::` in line 22 if the data uses a different separator like an actual comma.
 
 ## Changelog
 
